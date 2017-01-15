@@ -44,5 +44,3 @@ function getQuote(){
 		}
 	});
 }
-
-openUrl('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=')
