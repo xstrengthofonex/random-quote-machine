@@ -9,6 +9,8 @@ $(document).ready(function(){
 		});	
 	});
 	$("#twitter-icon").click(function(){
+		// TODO - check the length of the quote and truncate if too long
+		var quoteLength = currentQuote.quote.length;
 		var message = encodeURI('"' + currentQuote.quote + '" - ' + currentQuote.author);
 		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + message);
 	})
