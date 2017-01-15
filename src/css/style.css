@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	color: #444;
+}
+
+.quote-icon {
+	width: 10%;
+	float: left;
+}
+
+.wrapper {
+	max-width: 1000px;
+	padding: 0 2%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+	display: inline-block;
+}
+
+#quote {
+	font-size: 20px;
+	width: 90%;
+	float: right;
+}
+
+#author {
+	float: right;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#refresh {
+	margin-top: 20px;
+	display: none;
+	width: 60px;
+}
+
+#refresh:hover {
+	cursor: pointer;
+}
+
+.card {
+	display: none;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 16px 20px;
+	color: #fff;
+	border-radius: 4px;
+}
+
+
+.turquois {
+	background-color: #1abc9c;
+}
+
+.peter-river {
+	background-color: #3498db;
+}
+
+.amethyst {
+	background-color: #9b59b6;	
+}
+
+.pumpkin {
+	background-color: #d35400;	
+}
+
+.orange {
+	background-color: #f39c12;
+}
+
+.pomergranate {
+	background-color: #c0392b;
+}
+
+.wet-asphalt {
+	background-color: #34495e;
+}
+
+.asbestos {
+	background-color: #7f8c8d;
+}
