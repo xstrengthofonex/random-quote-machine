@@ -1,21 +1,27 @@
 body {
 	margin: 0;
 	color: #444;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: lighter;
 }
 
 #quote-icon {
-	width: 10%;
+	width: 50px;
 	float: left;
 }
 
 #twitter-icon {
-	width: 8%;
+	width: 50px;
 }
 
 
 .wrapper {
 	max-width: 1000px;
-	padding: 0 2%;
+	padding: 0 4%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -26,7 +32,7 @@ body {
 }
 
 #quote {
-	font-size: 20px;
+	font-size: 22px;
 	width: 90%;
 	float: right;
 }
