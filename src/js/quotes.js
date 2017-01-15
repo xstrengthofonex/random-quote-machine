@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#refresh").click(function(){
 		$("#refresh").fadeOut();
 		$(".card").fadeOut("slow", function(){
+			$(".loader").show();
 			getQuote();	
 		});	
 	});
@@ -38,6 +39,7 @@ function getQuote(){
 		dataType: "json",
 		success: function(data){
 			currentQuote = data;
+			$(".loader").hide();
 			$(".card").addClass(randomColorClass());
 			$(".card").fadeIn();
 			$("#refresh").fadeIn();
