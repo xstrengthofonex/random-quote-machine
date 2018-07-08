@@ -29,15 +29,8 @@ function randomColorClass(){
 
 
 function getQuote(){
-	$.ajax({
-		headers: {
-			'X-Mashape-Key': 'JDiz2qDa3HmshwAtrLdMWP7teES6p17xFsojsnaC17Xq1yOjhG',
-			Accept: 'application/json',
-			'Content-Type': 'application/x-www-form-urlencoded'	
-		},
-		url: "https://andruxnet-random-famous-quotes.p.mashape.com/",
-		dataType: "json",
-		success: function(data){
+	$.getJSON("https://talaikis.com/api/quotes/random/",
+		function(data){
 			currentQuote = data;
 			$(".loader").hide();
 			$(".card").addClass(randomColorClass());
@@ -46,5 +39,5 @@ function getQuote(){
 			$("#quote").text(data.quote);
 			$("#author").text(data.author);
 		}
-	});
+	);
 }
