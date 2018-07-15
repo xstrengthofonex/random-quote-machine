@@ -2,19 +2,14 @@ var currentQuote = null;
 
 $(document).ready(function(){
 	getQuote();
-	$("#refresh").click(function(){
-		$("#refresh").fadeOut();
+	
+	$("#new-quote").click(function(){
+		$("#new-quote").fadeOut();
 		$(".card").fadeOut("slow", function(){
 			$(".loader").show();
 			getQuote();	
 		});	
 	});
-	$("#twitter-icon").click(function(){
-		// TODO - check the length of the quote and truncate if too long
-		var quoteLength = currentQuote.quote.length;
-		var message = encodeURI('"' + currentQuote.quote + '" - ' + currentQuote.author);
-		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + message);
-	})
 });
 
 var colorClasses = [
@@ -27,7 +22,6 @@ function randomColorClass(){
 	return colorClasses[random];
 }
 
-
 function getQuote(){
 	$.getJSON("https://talaikis.com/api/quotes/random/",
 		function(data){
@@ -35,9 +29,11 @@ function getQuote(){
 			$(".loader").hide();
 			$(".card").addClass(randomColorClass());
 			$(".card").fadeIn();
-			$("#refresh").fadeIn();
-			$("#quote").text(data.quote);
+			$("#new-quote").fadeIn();
+			$("#text").text(data.quote);
 			$("#author").text(data.author);
+			let message = encodeURI('"' + data.quote + '" - ' + data.author);
+			$("#tweet-quote").prop("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + message);
 		}
 	);
 }

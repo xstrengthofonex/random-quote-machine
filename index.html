@@ -4,6 +4,7 @@
 	<title>Random Quote Machine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./src/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./src/css/loader.css">
@@ -14,17 +15,17 @@
 	<section>
 			<div class="wrapper">
 			<h1>Random Quote Machine</h1>
-			<div class="card">
+			<div class="card" id="quote-box">
 				<div class="row">
 					<img id="quote-icon" src="./src/img/quote-icon.png">
-					<p id="quote"></p>
+					<p id="text"></p>
 				</div>
 				<div class="row">
-					<img id="twitter-icon" src="./src/img/twitter.png">
+					<a href="#" id="tweet-quote"><img src="./src/img/twitter.png"></a>
+					<button id="new-quote"><img src="./src/img/refresh-2.png"></button>
 					<p id="author"></p>	
 				</div>
 			</div>
-			<img id="refresh" src="./src/img/refresh.png">
 			<div class="loader"></div>
 		</div>
 	</section>

@@ -14,7 +14,7 @@ h1 {
 	float: left;
 }
 
-#twitter-icon {
+#tweet-quote img {
 	width: 50px;
 }
 
@@ -31,7 +31,7 @@ h1 {
 	display: inline-block;
 }
 
-#quote {
+#text {
 	font-size: 22px;
 	width: 90%;
 	float: right;
@@ -41,16 +41,22 @@ h1 {
 	float: right;
 	font-size: 18px;
 	font-style: italic;
+	color: #fff;
 }
 
-#refresh {
-	margin-top: 20px;
-	margin-bottom: 20px;
+#new-quote {
+	background-color: transparent;
+	outline: none;
+	border: none;
 	display: none;
+	text-align: center;
+}
+
+#new-quote img {
 	width: 60px;
 }
 
-#twitter-icon, #refresh:hover {
+#tweet-quote, #new-quote:hover {
 	cursor: pointer;
 }
 
